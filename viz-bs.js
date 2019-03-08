@@ -1,6 +1,27 @@
-//search for a given value (key) inside of a list (numArray)
-//runs in O(log n)  run time - very fast
-//can be written iterative or recursive
+//make boolean for ifChanged and reprint array?
+//
+
+
+var grabbedArray = []
+
+function arrayGrab(){
+    var arrayLength = document.getElementById('hardcodedArray').rows[0].cells.length
+    
+    for(var i = 0; i < arrayLength; i++){
+    grabbedArray.push(document.getElementById('hardcodedArray').rows[0].cells[i].innerHTML)
+        console.log(i)
+    }
+    //console.log(grabbedArray)
+}
+
+console.log(grabbedArray)
+
+function render(){
+    grabbedArray[0].innerHTML.style.color = 'blue'
+    
+}
+
+
 
 function binarySearch (array, num) {
 
@@ -21,6 +42,9 @@ function binarySearch (array, num) {
     } else return -1
 
 }
+
+
+
 
 console.log(binarySearch([5, 7, 12, 16, 36, 39, 42, 56, 71], 71))
 
